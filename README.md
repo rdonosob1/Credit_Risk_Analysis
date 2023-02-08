@@ -55,7 +55,7 @@ Using different algorithms as mentioned above we will resample the dataset, view
 
 •	Recall Low Risk: 43%
 
-![image]()
+![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/ClusterCentroids.png)
 
 ### Combination (Over and Under) Sampling
 #### SMOTEENN: Using SMOTEENN Algorithm we obtained the following results:
@@ -69,7 +69,9 @@ Using different algorithms as mentioned above we will resample the dataset, view
 
 •	Recall Low Risk: 57%
 
-![image]()
+![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN%20Confusion%20Matrix%20with%20labels.png)
+
+![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN.png)
 
 ### Ensemble Learners
 #### Balanced Random Forest Classifier: Using this algorithm we obtained the following results:
@@ -125,8 +127,10 @@ Next, we tried to Undersample the model using cluster centroigs algorithm. The r
 To complete this part of the analysis, we used a combinatorial approach of over- and undersampling with the SMOTEENN algorithm to determine if the results from the combinatorial approach are better at predicting credit risk than the resampling algorithms. However, we can see a drop on the accuracy score from 65% to 51%, while the precision rate is still the same (99%) and the recall rate improved from the previous one and went up to 57%. Nevertheless, we are not confident at all due to the results haven’t improved yet and aren't good enough. 
 
 #### Easy Ensemble Classifying
-Finally, we tried to use ensemble classifiers Easy Ensemble Classifying in order to find a better result for the model to use. In this section we use BalancedRandomForestClassifier algorithm and Easy Ensemble Classifier where we obtained the following results 
+Finally, we tried to use ensemble classifiers Easy Ensemble Classifying in order to find a better result for the model to use. In this section we use BalancedRandomForestClassifier algorithm and Easy Ensemble Classifier where we obtained the following results:
+
 •	BalanceRandomFOrest Classifier: Accuracy Score: 67.2%, avg precision 100% and avg recall
 •	Easy Ensemble Classifier: This last results show an important improvement comparing to the previous ones where we can see that this model is very reliable with an accuracy score of 92.5%. Likewise the avg precision is 100% and the recall rate is 94%.
+
 After factoring in these three main statistics, the model that I would recommend to use for predicting high risk loans is the Easy Ensemble Classifying model.
 
