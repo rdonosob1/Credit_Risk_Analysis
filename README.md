@@ -132,5 +132,5 @@ Finally, we tried to use ensemble classifiers Easy Ensemble Classifying in order
 •	BalanceRandomFOrest Classifier: Accuracy Score: 67.2%, avg precision 100% and avg recall
 •	Easy Ensemble Classifier: This last results show an important improvement comparing to the previous ones where we can see that this model is very reliable with an accuracy score of 92.5%. Likewise the avg precision is 100% and the recall rate is 94%.
 
-After factoring in these three main statistics, the model that I would recommend to use for predicting high risk loans is the Easy Ensemble Classifying model.
+After running these 6 different algorithms, the model that I would recommend to use for predicting high risk loans is the Easy Ensemble Classifying model.
 
