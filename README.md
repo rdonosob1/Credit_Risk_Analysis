@@ -17,57 +17,41 @@ Using different algorithms as mentioned above we will resample the dataset, view
 ### Resampling Models to Predict Credit Risk
 
 #### Naïve Random Oversampling: Using Oversampling Random Over Sampler
-•	Accuracy Score: 62.5%
-
-• Precision High Risk: 1%
-
-• Precision Low Risk: 100%
-
-• Recall High Risk: 60%
-
-• Recall Low Risk: 65%
+  - Accuracy Score: 62.5%
+  - Precision High Risk: 1%
+  - Precision Low Risk: 100%
+  - Recall High Risk: 60%
+  - Recall Low Risk: 65%
 
 ![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/RandomOverSampler.png)
 
 #### SMOTE Oversampling: Using SMOTE Oversampling Algorithm we obtained the following results:
-•	Accuracy Score: 65.1%
-
-•	Precision High Risk: 1%
-
-•	Precision Low Risk: 100%
-
-•	Recall High Risk: 64%
-
-•	Recall Low Risk: 66%
+  - Accuracy Score: 65.1%
+  - Precision High Risk: 1%
+  - Precision Low Risk: 100%
+  - Recall High Risk: 64%
+  - Recall Low Risk: 66%
 
 ![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/Smote.png)
 
 ### Undersampling Models to Predict Credit Risk
 
 #### Cluster Centroids: Using Undersampling ClusterCentroids algorithm we obtained the following results:
-•	Accuracy Score: 65.1%
-
-•	Precision High Risk: 1%
-
-•	Precision Low Risk: 100%
-
-•	Recall High Risk: 59%
-
-•	Recall Low Risk: 43%
+  - Accuracy Score: 65.1%
+  - Precision High Risk: 1%
+  - Precision Low Risk: 100%
+  - Recall High Risk: 59%
+  - Recall Low Risk: 43%
 
 ![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/ClusterCentroids.png)
 
 ### Combination (Over and Under) Sampling
 #### SMOTEENN: Using SMOTEENN Algorithm we obtained the following results:
-•	Accuracy Score: 51%
-
-•	Precision High Risk: 1%
-
-•	Precision Low Risk: 100%
-
-•	Recall High Risk: 70%
-
-•	Recall Low Risk: 57%
+  - Accuracy Score: 51%
+  - Precision High Risk: 1%
+  - Precision Low Risk: 100%
+  - Recall High Risk: 70%
+  - Recall Low Risk: 57%
 
 ![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/SMOTEENN%20Confusion%20Matrix%20with%20labels.png)
 
@@ -75,28 +59,20 @@ Using different algorithms as mentioned above we will resample the dataset, view
 
 ### Ensemble Learners
 #### Balanced Random Forest Classifier: Using this algorithm we obtained the following results:
-•	Accuracy Score: 67.2%
-
-•	Precision High Risk: 73%
-
-•	Precision Low Risk: 100%
-
-•	Recall High Risk: 34%
-
-•	Recall Low Risk: 100%
+  - Accuracy Score: 67.2%
+  - Precision High Risk: 73%
+  - Precision Low Risk: 100%
+  - Recall High Risk: 34%
+  - Recall Low Risk: 100%
 
 ![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/Random_Forest.png)
 
 #### Easy Ensemble AdaBoost Classifier: Using this algorithm we obtained the following results:
-•	Accuracy Score: 92.5%
-
-•	Precision High Risk: 7%
-
-•	Precision Low Risk: 100%
-
-•	Recall High Risk: 91%
-
-•	Recall Low Risk: 94%
+  - Accuracy Score: 92.5%
+  - Precision High Risk: 7%
+  - Precision Low Risk: 100%
+  - Recall High Risk: 91%
+  - Recall Low Risk: 94%
 
 ![image](https://github.com/rdonosob1/Credit_Risk_Analysis/blob/main/Resources/Easy%20Ensemble%20Analysis_Confuion%20Matrix.png)
 
@@ -120,7 +96,7 @@ This model on one hand shows an accuracy score of 62.5%, a precision rate avg of
 A similar scenario we can observe after running this algorithm where the results slightly changed, but they are pretty much align to the previous ones, where the accuracy score is 65.1%, the precision rate avg is still 99%, and a recall rate average is now 66%. The scenario keeps showing a consistent as shown with the previous algorithm. 
 
 #### Udersampling 
-Next, we tried to Undersample the model using cluster centroigs algorithm. The results, improved a little bit, but not enough to feel confident about using this model where the accuracy score is 65.1%, the avg. precision rate is still the same, but the avg recall rate went down to 44%.
+Next, we tried to Undersample the model using cluster centroids algorithm. The results, improved a little bit, but not enough to feel confident about using this model where the accuracy score is 65.1%, the avg. precision rate is still the same, but the avg recall rate went down to 44%.
 
 
 #### Combination (Over-and-Undersampling)
@@ -129,9 +105,8 @@ To complete this part of the analysis, we used a combinatorial approach of over-
 #### Easy Ensemble Classifying
 Finally, we tried to use ensemble classifiers Easy Ensemble Classifying in order to find a better result for the model to use. In this section we use BalancedRandomForestClassifier algorithm and Easy Ensemble Classifier where we obtained the following results:
 
-•	BalanceRandomFOrest Classifier: Accuracy Score: 67.2%, avg precision 100% and avg recall
-
-•	Easy Ensemble Classifier: This last results show an important improvement comparing to the previous ones where we can see that this model is very reliable with an accuracy score of 92.5%. Likewise the avg precision is 100% and the recall rate is 94%.
+  - BalanceRandomForest Classifier: Accuracy Score: 67.2%, avg precision 100% and avg recall
+  - Easy Ensemble Classifier: This last results show an important improvement comparing to the previous ones where we can see that this model is very reliable with an accuracy score of 92.5%. Likewise the avg precision is 100% and the recall rate is 94%.
 
 After running these 6 different algorithms, the model that I would recommend to use for predicting high risk loans is the Easy Ensemble Classifying model.
 
